@@ -7,17 +7,58 @@
     <link rel="stylesheets" href="styles.css">
 </head>
 <body>
+    <!--Header Sect-->
     <header>
         <div class="logo-div">
            <img src="./Assets/maki_theatre.svg" alt="Mood Picker Logo">
-           <h1>Mood Tracker</h1>
+           <h1 class="logo">Mood Tracker</h1>
         </div>
-        <img src="./Assets/uis_chart.svg" class="stats-btn" alt="stats-btn"></img>
+        <img src="./Assets/uis_chart.svg" class="stats-btn" id="stats-btn" alt="stats-btn"></img>
     </header>
 
     <!--Main Sect-->
-    <main></main>
+    <main>
+
+       <container class="mood-picker-div" id="mood-picker-div">
+
+         <h1 class="mood-header">How Do You Feel Today?</h1>
+
+        <figure class="emoji-div">
+            <img class="emoji" id="great" src="./Assets/stash_emoji-joy.svg"></img>
+            <figcaption>Great</figcaption>
+        </figure>
+        <figure class="emoji-div">
+            <img class="emoji" id="Good" src="./Assets/stash_emoji-joy.svg"></img>
+            <figcaption>Good</figcaption>
+        </figure>
+        <figure class="emoji-div">
+            <img class="emoji" id="Okay" src="./Assets/bi_emoji-neutral.svg"></img>
+            <figcaption>Okay</figcaption>
+        </figure>
+        <figure class="emoji-div">
+            <img class="emoji" id="Sad" src="./Assets/fluent_emoji-sad-slight-24-regular.svg"></img>
+            <figcaption>Sad</figcaption>
+        </figure>
+        <figure class="emoji-div">
+            <img class="emoji" id="Angry" src="./Assets/fluent_emoji-angry-20-regular.svg"></img>
+            <figcaption>Angry</figcaption>
+        </figure>
+           
+       </container>
+
+       <button class="add-entry-btn" id="add-entry-btn">Add Entry</button>
+
+       <container class="entry-div" id="entry-div">
+         <h1>No Entries Yet</h1>
+       </container>
+       
+       <button class="show-more-btn" id="show-more-btn">Show More</button>
+    </main>
+
+    <!--Footer Sect-->
     <footer></footer>
+
+    <!--Scripts-->
 <script src="./scripts.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </body>
