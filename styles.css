@@ -6,6 +6,7 @@
 body,html {
     width: 100%;
     height: 100vh;
+    cursor: default;
 }
 
 /* Header */ 
@@ -36,5 +37,44 @@ header {
 
 .logo {
     font-size: 1.5rem;
+    font-family: "Galindo", sans-serif;
     margin-left: 10px;
+}
+
+/* Main Sect */ 
+
+main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.mood-picker-div {
+   text-align: center;
+}
+
+.mood-header {
+    font-family:  "Oswald", sans-serif;
+    font-size: 3.5rem;
+}
+
+.main-emoji-div {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.emoji-div {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.okay, .good {
+    margin-top: 20px;
+}
+
+figcaption {
+    font-family: "Galindo", sans-serif;
 }

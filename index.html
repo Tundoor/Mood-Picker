@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mood Tracker</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Galindo&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Header Sect-->
@@ -22,18 +25,19 @@
        <container class="mood-picker-div" id="mood-picker-div">
 
          <h1 class="mood-header">How Do You Feel Today?</h1>
-
+        
+         <div class="main-emoji-div">
         <figure class="emoji-div">
             <img class="emoji" id="great" src="./Assets/stash_emoji-joy.svg"></img>
             <figcaption>Great</figcaption>
         </figure>
-        <figure class="emoji-div">
-            <img class="emoji" id="Good" src="./Assets/stash_emoji-joy.svg"></img>
-            <figcaption>Good</figcaption>
+        <figure class="emoji-div good" >
+            <img class="emoji" id="Good" src="./Assets/bi_emoji-smile.svg"></img>
+            <figcaption class="good">Good</figcaption>
         </figure>
-        <figure class="emoji-div">
+        <figure class="emoji-div okay">
             <img class="emoji" id="Okay" src="./Assets/bi_emoji-neutral.svg"></img>
-            <figcaption>Okay</figcaption>
+            <figcaption class="okay">Okay</figcaption>
         </figure>
         <figure class="emoji-div">
             <img class="emoji" id="Sad" src="./Assets/fluent_emoji-sad-slight-24-regular.svg"></img>
@@ -43,7 +47,7 @@
             <img class="emoji" id="Angry" src="./Assets/fluent_emoji-angry-20-regular.svg"></img>
             <figcaption>Angry</figcaption>
         </figure>
-           
+           </div>
        </container>
 
        <button class="add-entry-btn" id="add-entry-btn">Add Entry</button>
